@@ -64,8 +64,8 @@ function updateTable() {
         row.innerHTML = `
           <td>${manufacturer}</td>
           <td>${productName}</td>
-          <td>${price}</td>
-          <td>${quantity}</td>
+          <td>${parseFloat(price).toLocaleString()}</td>
+          <td>${parseInt(quantity).toLocaleString()}</td>
         `;
 
         // Добавляем всплывающую подсказку с данными товара
@@ -82,8 +82,8 @@ function updateTable() {
       }
 
       // Обновляем ячейки с итогами
-      totalPriceCell.textContent = totalPrice.toFixed(2);
-      totalQuantityCell.textContent = totalQuantity.toString();
+      totalPriceCell.textContent = parseFloat(totalPrice.toFixed(2)).toLocaleString();
+      totalQuantityCell.textContent = parseInt(totalQuantity).toLocaleString();
     });
 }
 
