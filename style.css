@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Устанавливаем фон страницы */
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  padding: 0 12px;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+/* Заголовок страницы */
+.page-title {
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+}
+
+/* Подзаголовок страницы */
+.page-subtitle {
+  margin-top: 20px;
+  color: #333;
+}
+
+/* Стили для формы */
+.form {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Стили для текстовых полей и кнопки */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Стили для таблицы */
+.table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  border: 1px solid lightgray;
+}
+
+.table th, .table td {
+  padding: 10px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f5f5f5;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+/* Стили для ячеек с итогами */
+.total-price, .total-quantity {
+  font-weight: bold;
+}
+
+.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.sortable:hover {
+  background-color: rgba(220, 220, 220, 0.6);
+}
+
+.table tbody tr {
+  cursor: pointer;
+}
+
+.table tbody tr:hover {
+  background-color: rgba(220, 220, 220, 0.6);
+}
