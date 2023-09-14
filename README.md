@@ -1,8 +1,6 @@
 # test-task-php
 
-## Тестовое задание на Full Stack Junior developer (PHP / JS)
- 
-> Форма для добавления товара и таблица товаров
+## Тестовое задание на Full Stack Junior developer (PHP / JS) — форма для добавления товара и таблица товаров
 
 ### Как запустить
 
