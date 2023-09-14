@@ -27,9 +27,17 @@ if ($_SERVER["REQUEST_METHOD"] === "DELETE") {
 
     // Удаление строки из текстового файла
     $fileContents = file("products.txt");
+
+    // Фильтруем массив и оставляем только строки, которые не содержат удаляемые данные
     $newContents = array_filter($fileContents, function($line) use ($deleteData) {
         return !str_contains($line, $deleteData["data"]);
     });
-    file_put_contents("products.txt", implode(PHP_EOL, $newContents));
+
+    // Объединяем строки в одну строку без лишних переносов
+    $newFileContents = implode("", $newContents);
+
+    // Перезаписываем файл с обновленным содержанием
+    file_put_contents("products.txt", $newFileContents);
 }
+
 ?>

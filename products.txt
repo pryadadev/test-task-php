@@ -1,0 +1,4 @@
+Apple :: IPhone 13 128Gb :: 80999 :: 3
+Apple :: IPhone 14 Pro 256Gb :: 122999 :: 2
+Samsung :: Galaxy S23 Ultra 512Gb :: 94999 :: 5
+qwerty :: ytrewq :: 123 :: 321
