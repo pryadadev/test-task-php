@@ -6,12 +6,6 @@ function addProduct(event) {
   const price = document.getElementById("price").value;
   const quantity = document.getElementById("quantity").value;
 
-  console.log("addProductClick")
-  console.log("manufacturer", manufacturer.value);
-  console.log("productName", productName.value);
-  console.log("price", price.value);
-  console.log("quantity", quantity.value);
-
   // Проверяем, что все поля заполнены
   if (!manufacturer || !productName || !price || !quantity) {
     return;
